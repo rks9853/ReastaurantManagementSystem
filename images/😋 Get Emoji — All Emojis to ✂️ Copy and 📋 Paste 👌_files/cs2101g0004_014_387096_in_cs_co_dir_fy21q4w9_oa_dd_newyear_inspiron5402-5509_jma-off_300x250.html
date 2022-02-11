@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0232)https://s0.2mdn.net/9684407/1608282319645/cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250/cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="ad.size" content="width=300,height=250">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dell</title>
+<link rel="stylesheet" href="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_style.css">
+<link href="./css(1)" rel="stylesheet"> 
+
+<!-- ClickTag -->
+<script type="text/javascript">
+  var clickTag = "";
+</script> 
+
+<script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script></head>
+<body>
+
+  <div id="ad">     
+    <div id="banner" style="visibility: visible;">
+
+      <a href="javascript:void(0);" onclick="window.open(window.clickTag)" id="clickTAG"></a>
+
+      <!-- Frame One-->
+      <div id="frame_one">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_bg.jpg" alt="" class="bg" style="opacity: 1;">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_dell_logo.png" alt="" class="dell-logo" style="opacity: 0;">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_vendor_logo.png" alt="" class="vendor-logo" style="opacity: 0;">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_lookup.png" alt="" class="lookup" style="opacity: 1; transform: matrix(0.62, 0, 0, 0.62, -115, -43);">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_product1.png" alt="" class="product1" style="opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);">
+        <div class="title1_1" style="opacity: 0;">Inspiron 5000 series</div>
+        <div class="vendor-copy" style="opacity: 0;">Pre-installed with genuine <br>Windows and Office 2019</div>
+      </div>
+
+      <!-- Frame Two-->
+      <div id="frame_two">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_dell_logo2.png" alt="" class="dell-logo2" style="opacity: 1;">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_vendor_logo2.png" alt="" class="vendor-logo2" style="opacity: 1;">
+    		<div class="title1" style="opacity: 0;">Start 2021<br>with power &amp; style</div>
+        <div class="vendor-copy2" style="opacity: 1;">Pre-installed with genuine <br>Windows and Office 2019</div>
+    		<div class="cta" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Shop Now</div>
+      </div>
+
+      <!-- Frame Three-->
+      <div id="frame_three">
+        <div class="title2_1" style="transform: matrix(1, 0, 0, 1, 0, 0);">Inspiron 5509</div>
+        <img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_vio1.png" alt="" class="vio1" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_product2.png" alt="" class="product2" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+      </div>
+      
+      <!-- Frame Five-->     
+      <div id="frame_five">
+    		<img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_vio2.png" alt="" class="vio2" style="opacity: 0; transform: matrix(0.7, 0, 0, 0.7, 0, 0); transform-origin: 50% 50% 0px;">
+        <img src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_product4.png" alt="" class="product4" style="transform: matrix(1, 0, 0, 1, -300, 0);">
+        <div class="title3" style="transform: matrix(1, 0, 0, 1, -300, 0);">Inspiron 5402</div>
+        <img id="replay" class="replay" src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_replay.png" alt="replay">
+      </div>
+      
+      <!--START: cta-handler-->
+      <div id="roll-cta" style="opacity: 0; transform: matrix(1, 0, 0, 1, -300, 0);"></div>
+      <div id="rolltext" style="opacity: 0;">Legal Rollover</div>
+      <div id="cta-handler">
+        <div id="legal">
+          <div id="legal-text" style="opacity: 0;">*T&amp;C apply. Price, specs, offers are subject to change and for a limited time only on select SKUs. Copyright © 2020 Dell Inc. All rights reserved.</div> 
+        </div>
+      </div>
+      <!--END: cta-handler-->
+
+    </div> <!-- banner -->     
+  </div>
+
+<script src="./tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js.download"></script>   
+<script type="text/javascript" src="./cs2101g0004_014_387096_in_cs_co_dir_fy21q4w9_oa_dd_newyear_inspiron5402-5509_jma-off_300x250_main.js.download" charset="UTF-8"></script>
+
+
+</body></html>

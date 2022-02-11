@@ -1,0 +1,321 @@
+/*-------------------------------------
+  Reset
+---------------------------------------*/
+
+/******Basic settings**********/
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img{
+  border: 0px;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Roboto', sans-serif; color: #808080;
+}
+.font-preloader{
+  font-family:'Roboto';
+  visibility:hidden;
+  width:0; 
+  height:0;
+}
+
+#frame_one, #frame_two,#frame_three,#frame_four,#frame_five {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------
+  Layout
+---------------------------------------*/
+
+#ad {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#banner {
+  position: absolute;
+  background: #eeeeee;
+  display: block;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  visibility: hidden; 
+  border: 1px solid #444444;
+  -webkit-box-sizing: border-box;  
+          box-sizing: border-box;  
+}
+#clickTAG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.ie-fallback{
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+/*-------------------------------------
+  Frame One frame duration: 3s
+---------------------------------------*/
+.bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.dell-logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.vendor-logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.product1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*transform: scale(.75);*/
+}
+.lookup {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.title1_1 {
+    position: absolute;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444;
+    bottom: 54px;
+    text-align: left;
+    left: 94px;
+}
+
+.vendor-copy {
+    position: absolute;
+    font-size: 9px;
+    line-height: 11px;
+    color: #444;
+    bottom: 8px;
+    text-align: left;
+    right: 20px;
+}
+
+.vendor-copy2 {
+    position: absolute;
+    font-size: 9px;
+    line-height: 11px;
+    color: #444;
+    bottom: 8px;
+    text-align: left;
+    left: 18px;
+}
+
+/*-------------------------------------
+  Frame two  frame duration: 3s
+---------------------------------------*/
+.dell-logo2 {
+	position: absolute;
+	top: 0px;
+	left: -2px;
+}
+.vendor-logo2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.title1 {
+	position: absolute;
+	font-size: 28px;
+	line-height: 31px;
+	font-weight: 300;
+	text-align: center;
+	color: #808080;
+	top: 96px;
+	width: 100%;
+}
+
+.cta{
+position: absolute;
+    color: #808080;
+    border: #808080 1px solid;
+    text-align: center;
+  right: 14px;
+  bottom: 12px;
+    display: block;
+    padding: 6px 9px 5px 9px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+
+/*-------------------------------------
+  Frame Three  frame duration: 3s
+---------------------------------------*/
+.vio1 {
+    position: absolute;
+    top: -32px;
+    left: 46px;
+}
+
+.title2 {
+    position: absolute;
+    font-size: 13px;
+    line-height: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #808080;
+    top: 82px;
+    right: 10px;
+}
+.title2_1 {
+position: absolute;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #808080;
+    top: 125px;
+    right: 32px;
+}
+
+.product2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+/*-------------------------------------
+  Frame Five  frame duration: 3s
+---------------------------------------*/
+.vio2 {
+    position: absolute;
+    top: -32px;
+    left: 30px;
+}
+.f5-price{
+  position: absolute;
+  top: 121px;
+  left: 180px;
+  color: #808080;
+  width: 140px;
+}
+
+.f5-config-price {
+  font-size: 20px; 
+  color: #808080;
+  display: block;
+  line-height:18px;
+  font-weight: 700;
+  margin-top: 4px;  
+}
+.f5-config-price sup {
+  font-size:11px;
+  line-height:11px;
+  position: relative;
+  top: 2px;
+}
+.f5-config-name {
+  font-size: 12px;
+  color: #808080;  
+  font-weight: 700;
+  display: block;
+}
+.product4{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.title3 {
+position: absolute;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #808080;
+    top: 118px;
+    right: 38px;
+}
+
+
+/*Roll over*/
+
+#roll-cta {
+  position: absolute;
+  color: #808080;
+  bottom: 40px;
+  right: 15px;
+  z-index: 99999;
+  width: 80px;
+  height: 15px;
+}
+#legal {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  background:#fff;
+  top:-1000px;
+  z-index: 9999;
+}
+#legal-text {
+position: absolute;
+    color: #808080;
+    width: 295px;
+    height: 150px;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: left;
+    padding: 8px 10px;
+}
+#rolltext {
+  color: #808080;
+  position: absolute;
+  z-index: 9;
+   bottom: 40px;
+  right: 15px;
+  font-size: 8px;
+}
+
+.replay {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  right:4px;
+  top:4px;
+  cursor: pointer;
+  z-index: 9999;
+}
